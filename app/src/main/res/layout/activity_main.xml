@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Agencia de turismo Paisa travel"
+        android:gravity="center"
+        android:background="#BCDA76"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Nombre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ingrese Nombre"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Destino"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spdestino"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Fecha"
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etfecha"
+            android:gravity="center"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="Fecha"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Numero de personas"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/numpersonas"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint=""/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Número de Dias"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:checked="true"
+            android:layout_marginLeft="160dp"
+
+            />
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="160dp"
+            />
+        <RadioButton
+            android:id="@+id/rb6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:layout_marginLeft="160dp"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:text="Adicionales"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/swtour"
+        android:layout_width="match_parent"
+        android:text="Tour por la ciudad"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="160dp"
+        />
+
+    <Switch
+        android:id="@+id/swdiscoteca"
+        android:layout_width="match_parent"
+        android:text="Discoteca"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="160dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Total a pagar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvtotal"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btncalc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            />
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:id="@+id/btnclean"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="Limpiar" />
+
+    </LinearLayout>
+
+</LinearLayout>
